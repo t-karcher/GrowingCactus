@@ -23,6 +23,7 @@ func _process(delta):
 			
 func add_segment():
 	var new_segment = sprite.duplicate()
+	# My cactus texture consists of two frames, with frame 0 being the head
 	new_segment.frame = 1
 	add_child(new_segment)
 	new_segment.position.y = floor(current_height) * SEGMENT_HEIGHT
